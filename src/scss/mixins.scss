@@ -1,0 +1,67 @@
+// Desktop first
+
+@mixin vp--1919 {
+  @media (max-width: $vp--1920 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--1689 {
+  @media (max-width: $vp--1690 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--1595 {
+  @media (max-width: $vp--1596 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--1439 {
+  @media (max-width: $vp--1440 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--1279 {
+  @media (max-width: $vp--1280 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--1245 {
+  @media (max-width: $vp--1246 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--1023 {
+  @media (max-width: $vp--1024 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--899 {
+  @media (max-width: $vp--900 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--767 {
+  @media (max-width: $vp--768 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--499 {
+  @media (max-width: $vp--500 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--359 {
+  @media (max-width: $vp--360 - 1) {
+    @content;
+  }
+}

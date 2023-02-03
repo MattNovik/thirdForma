@@ -1,0 +1,145 @@
+.select {
+  $parent: &;
+  $select-short: '.select-short';
+  cursor: pointer;
+  position: relative;
+
+  &#{$select-short} {
+    font-size: 0.75rem;
+    line-height: 0.95rem;
+    border: solid 1px #ced4da;
+    border-radius: 4px;
+
+    #{$parent}__current {
+      color: $color-main;
+      min-width: 80px;
+    }
+    #{$parent}__box {
+      border: none;
+      padding: 6px 10px;
+
+      &::after {
+        position: static;
+        margin-top: -2px;
+      }
+    }
+
+    #{$parent}__value {
+      margin-left: 0;
+      font-size: 0.7rem;
+      white-space: nowrap;
+    }
+
+    #{$parent}__dropdown {
+      border: navajowhite;
+      border: solid 1px #ced4da;
+      border-radius: 0 0 4px 4px;
+      border-top: none;
+    }
+
+    &.select_show {
+      border-radius: 4px 4px 0 0;
+    }
+  }
+
+  &__hidden {
+    display: none;
+    pointer-events: none;
+  }
+
+  &__box {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 8px;
+      top: calc(50% - 4px);
+      transform: translateY(-50%);
+      padding: 2px;
+      border: solid black;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__current {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__dropdown {
+    position: absolute;
+    flex-direction: column;
+    row-gap: 0;
+    width: calc(100% + 2px);
+    top: 100%;
+    left: -1px;
+    right: 0;
+    background-color: $color-default-white;
+    /*     border: 1px solid #212529; */
+    /* box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2); */ /* filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.15)); */
+    padding: 5px 0 0;
+    z-index: 10;
+    display: none;
+
+    &_show {
+      display: flex;
+    }
+  }
+
+  &__element {
+    display: flex;
+    align-items: center;
+    padding: 5px 12px;
+    /* margin-bottom: 8px; */
+
+    &:hover {
+      background-color: $color-alice-blue;
+    }
+
+    &:last-of-type {
+      margin: 0px;
+    }
+  }
+
+  &__list {
+    flex-wrap: wrap;
+  }
+
+  &__source {
+    position: relative;
+    background: #ecedef;
+    border-radius: 4px;
+    padding: 2px 20px 2px 8px;
+    font-size: 0.875rem;
+    line-height: 1;
+    color: $color-title;
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+    margin-bottom: 2px;
+  }
+
+  &__close {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: 8px;
+
+    &::after,
+    &::before {
+      content: '';
+      height: 10px;
+      width: 2px;
+    }
+  }
+
+  &__value {
+    margin-left: 10px;
+  }
+}

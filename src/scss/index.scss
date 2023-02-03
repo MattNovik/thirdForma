@@ -1,0 +1,43 @@
+@import './reboot';
+
+.visibility-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* @supports (container-type: inline-size) {
+  .info {
+    display: none;
+  }
+} */
+
+@supports not (container-type: inline-size) {
+  #content {
+    visibility: hidden;
+  }
+}
+
+.info,
+.warning {
+  padding: 1em;
+  border: 1px solid #123456;
+  background: rgba(205 230 255 / 0.8);
+}
+.warning {
+  background: rgba(255 255 225 / 0.9);
+}
+.info p,
+.warning p {
+  margin: 0;
+  padding: 0;
+  color: #123456;
+}

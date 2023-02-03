@@ -1,0 +1,122 @@
+$color-transparent: transparent;
+$color-default-white: #ffffff;
+$color-default-black: #000000;
+
+$main-color: #eff7ff;
+$second-color: #b0db1f;
+$button-color: #ef7e29;
+$light-text: #737373;
+$light-text-gray-700: #787a80;
+$dark-text: #1e212c;
+$error-color: #dc3545;
+$color-biruza: #60d5e1;
+$color-warning: #d50000;
+$color-main: #1451ad;
+$color-alice-blue: #f8f9fa;
+$color-title: #303c54;
+
+$main-font: 'Arial', 'Helvetica', sans-serif;
+
+$vp--320: 320px;
+$vp--360: 360px;
+$vp--375: 375px;
+$vp--500: 500px;
+$vp--570: 570px;
+$vp--768: 768px;
+$vp--900: 900px;
+$vp--1024: 1024px;
+$vp--1140: 1140px;
+$vp--1200: 1200px;
+$vp--1246: 1246px;
+$vp--1280: 1280px;
+$vp--1440: 1440px;
+$vp--1680: 1680px;
+$vp--1780: 1780px;
+$vp--1920: 1920px;
+$vp--2560: 2560px;
+
+// Desktop first
+
+@mixin vp--1919 {
+  @media (max-width: $vp--1920 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--1689 {
+  @media (max-width: $vp--1690 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--1595 {
+  @media (max-width: $vp--1596 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--1439 {
+  @media (max-width: $vp--1440 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--1279 {
+  @media (max-width: $vp--1280 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--1245 {
+  @media (max-width: $vp--1246 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--1199 {
+  @media (max-width: $vp--1200 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--1139 {
+  @media (max-width: $vp--1140 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--1023 {
+  @media (max-width: $vp--1024 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--899 {
+  @media (max-width: $vp--900 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--767 {
+  @media (max-width: $vp--768 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--569 {
+  @media (max-width: $vp--570 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--499 {
+  @media (max-width: $vp--500 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--359 {
+  @media (max-width: $vp--360 - 1) {
+    @content;
+  }
+}
