@@ -7,6 +7,8 @@
   padding: 15px;
   border-radius: 10px;
   border: solid 1px rgb(133, 133, 133);
+  position: relative;
+  background-color: $color-default-white;
 
   &__first-form,
   &__second-form,
@@ -22,6 +24,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
+    color: $color-default-black;
   }
 
   &__input {
@@ -124,6 +127,14 @@
         }
       }
     }
+  }
+
+  &__file-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
   }
 
   &__file-item {
@@ -240,9 +251,13 @@
     margin: 0;
     font-size: 16px;
     line-height: 26px;
+    color: $color-default-black;
   }
 
   &__agreeament {
+    a {
+      text-decoration: underline;
+    }
     &.error {
       & + label {
         color: #dc3545;
